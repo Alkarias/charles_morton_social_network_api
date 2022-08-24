@@ -22,8 +22,7 @@ module.exports = {
             req.params.id, 
             req.body, 
             { new: true }
-        ).populate('thoughts')
-        .populate('friends');
+        )
         res.status(200).json(userData);
     },
     async deleteUser(req, res) {
